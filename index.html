@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- スライドショー -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+<!-- FontAwesome -->
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+<!-- フォント -->
+<link href="https://fonts.googleapis.com/css?family=Caveat rel="stylesheet">
+</head>
+<body>
+    <header>Hmajor Branch room</header>
+    <nav>
+        <ul>
+            <li class = contentA><i class="fas fa-trophy faa-bounce animated-hover fa-3x"></i><br/><a href="https://satoshi-hmajor.github.io/quiz/">QuizGame</a></li>
+            <li class = contentB><i class="fas fa-book fa-3x"></i><br/><a href="#">Blog</a></li>
+            <li class = contentC><i class="fas fa-book-reader fa-3x"></i><br/><a href="#">information</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="slider">
+            <img src="photo1.jpg" alt="">
+            <img src="photo2.jpg" alt="">
+            <img src="photo3.jpg" alt="">
+    　 </div>
+    </main>   
+    <footer></footer>
+</body>
+</html>
