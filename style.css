@@ -62,4 +62,30 @@ nav ul li.contentA {
 footer {
   grid-area: footer;
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template: "... ...... ...... ...... ...... ...... ..."
+ "... header header header header header ..." 100px
+ "... ...... ...... ...... ...... ...... ..." 0px
+ "... ...... ...... center ...... ...... ..." 1fr
+ "... ...... ...... left   ...... ...... ..." 1fr
+ "... footer footer footer footer footer ..." 70px
+ "... ...... ...... ...... ...... ...... ..."
+ / auto auto auto 100% auto auto auto;
+  }
+  header {
+    grid-area: header;
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  nav {
+    grid-area: left;
+  }
+  nav ul li {
+    font-size: 30px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
